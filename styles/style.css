@@ -1,1 +1,110 @@
-/* CSS 스타일 */
+@import url(./normalize.css);
+@import url(./reset.css);
+
+/* 기본 전체 스타일 */
+*,*::before, *::after{
+  box-sizing: border-box;
+  /* 각각의 class들의 형태를 맞춰줌 */
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 본문스타일 */
+body{
+  color:#212121;
+  background-color: #ffc;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+  BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+  "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* 레이아웃 */
+.header,
+.visual,
+.main,
+.slogan
+.footer-inner{
+  width: 940px;
+  margin : 0 auto;
+}
+
+/* 헤더 */
+.header{
+  background-color:greenyellow;
+  padding : 0 30px;
+  height: 15vh;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+  /*block형태에서 inline-block으로 인식하고 위치를 web cafe의 위치를 잡아줌.*/
+
+}
+
+.logo{
+  position: absolute;
+  top :45px;
+  left : 60px;
+}
+
+.member{
+  padding: 4px 0;  
+  text-align: right;
+  /* member을 span으로 안에 인라인박스를 만들고 text-align으로 방향조절 */
+}
+
+.member li{
+  display: inline-block;
+  /*인라인 박스(=inline 요소와는 비슷하지만, 이는 너비(width) 와 높이(height) 를 설정할 수 있다.
+     inline 과 block 의 중간 단계) 식으로 각각 만들어줌. */
+}
+
+.member a{
+  background-color: coral;
+  padding: 6px 10px;
+  display: inherit;
+}
+
+.divider{
+  margin-right: 4px;
+}
+
+.visual{
+  background-color: orange;
+  height: 10vh;
+}
+
+.main {
+  background-color: lightgreen;
+  height: 50vh;
+  display:flow-root;
+  padding: 0 15px;
+}
+
+.group{
+  margin: 0 15px;
+  float: left;
+}
+
+.slogan{
+  background-color: skyblue;
+  height: 10vh;
+  width: 940px;
+  clear: both;
+}
+
+
+.footer{
+  background-color: gray;
+  width:  940px;
+  margin: 0 auto;
+  height: 10vh;
+
+}
+
+.footer-inner{
+  background-color: silver;
+  height: 15vh; 
+}
