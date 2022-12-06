@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 /* 기본 전체 스타일 */
 *,*::before, *::after{
@@ -34,7 +35,7 @@ body{
 
 /* 헤더 */
 .header{
-  background-color:greenyellow;
+  background-color: #fff;
   padding : 0 30px;
   height: 15vh;
   border-radius: 0 0 15px 15px;
@@ -48,10 +49,19 @@ body{
   top :45px;
   left : 60px;
 }
+/*  
+.member li::before {
+  content: "\e800";
+  font-family: fontello;
+}
+*/
+
 
 .member{
-  padding: 4px 0;  
-  text-align: right;
+  padding: 10px 10px;  
+  text-align: right ;
+
+  
   /* member을 span으로 안에 인라인박스를 만들고 text-align으로 방향조절 */
 }
 
@@ -61,10 +71,9 @@ body{
      inline 과 block 의 중간 단계) 식으로 각각 만들어줌. */
 }
 
+
 .member a{
-  background-color: coral;
-  padding: 6px 10px;
-  display: inherit;
+  text-transform: uppercase;
 }
 
 .divider{
