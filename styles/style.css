@@ -67,6 +67,7 @@ body{
 
 .member li{
   display: inline-block;
+  margin-right: 4px;
   /*인라인 박스(=inline 요소와는 비슷하지만, 이는 너비(width) 와 높이(height) 를 설정할 수 있다.
      inline 과 block 의 중간 단계) 식으로 각각 만들어줌. */
 }
