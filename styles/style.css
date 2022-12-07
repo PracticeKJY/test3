@@ -2,11 +2,15 @@
 @import url(./reset.css);
 @import url(./fontello.css);
 
+
+
 /* 기본 전체 스타일 */
 *,*::before, *::after{
   box-sizing: border-box;
   /* 각각의 class들의 형태를 맞춰줌 */
 }
+
+
 
 a{
   text-decoration: none;
@@ -36,10 +40,10 @@ body{
 /* 헤더 */
 .header{
   background-color: #fff;
-  padding : 0 30px;
-  height: 15vh;
+  padding : 0 20px;
   border-radius: 0 0 15px 15px;
   position: relative;
+  height: 10vh;
   /*block형태에서 inline-block으로 인식하고 위치를 web cafe의 위치를 잡아줌.*/
 
 }
@@ -58,23 +62,33 @@ body{
 
 
 .member{
-  padding: 10px 10px;  
+  
+  padding: -2px 0;
+    
   text-align: right ;
+  position: relative;
+  right: -10px;
 
   
   /* member을 span으로 안에 인라인박스를 만들고 text-align으로 방향조절 */
 }
 
 .member li{
+  
   display: inline-block;
-  margin-right: 4px;
+  
   /*인라인 박스(=inline 요소와는 비슷하지만, 이는 너비(width) 와 높이(height) 를 설정할 수 있다.
      inline 과 block 의 중간 단계) 식으로 각각 만들어줌. */
 }
 
 
 .member a{
+  padding:6px 10px;
+  display: inherit;
   text-transform: uppercase;
+  position:relative;
+  right: -2px;
+  font-size: 16px;
 }
 
 .divider{
